@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RelativeLayout1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/estimateBACLevel_txtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estimated BAC Level"
+            android:textAlignment="center"
+            android:textSize="23sp"/>
+
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:layout_marginLeft="120dp"
+        android:id="@+id/donut_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:donut_progress="20"
+        android:layout_below="@+id/estimateBACLevel_txtView"/>
+
+
+
+        <TextView
+            android:id="@+id/Drinks_txtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Drinks had today"
+            android:textAlignment="center"
+            android:textSize="23sp"
+            android:paddingTop="30dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/drinks_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/white_plus_md" />
+
+</FrameLayout>

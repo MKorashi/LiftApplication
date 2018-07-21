@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.lift.AutoMoodLogging"
+>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_layout">
+
+
+   <Button
+       android:id="@+id/button_imagemoodlog"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Image Mood Logging"
+       android:layout_marginTop="241dp"
+       android:layout_marginRight="87dp"
+       android:layout_marginEnd="87dp"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true" />
+
+   <Button
+       android:id="@+id/button_textmoodlog"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Text Mood Logging"
+       android:layout_below="@+id/button_imagemoodlog"
+       android:layout_alignRight="@+id/button_imagemoodlog"
+       android:layout_alignEnd="@+id/button_imagemoodlog"
+       android:layout_marginTop="55dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

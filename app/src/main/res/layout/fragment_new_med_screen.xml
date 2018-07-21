@@ -1,0 +1,180 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    tools:context="com.example.dell.lift.NewMedScreen">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+
+        <TextView
+            android:id="@+id/medName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="39dp"
+            android:layout_marginLeft="20dp"
+            android:text="Name"
+            android:textSize="23dp"
+            android:textColor="@color/white"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteMedName"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="32dp"
+            android:text="AutoCompleteTextView" />
+
+        <TextView
+            android:id="@+id/unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:text="Unit"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/autoCompleteMedName"
+            android:layout_alignLeft="@+id/medName"
+            android:layout_alignStart="@+id/medName" />
+
+        <Spinner
+            android:id="@+id/spinner_Unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/unit"
+            android:layout_toRightOf="@+id/textView_IntakeFrequency"
+            android:layout_toEndOf="@+id/textView_IntakeFrequency"
+            android:layout_marginLeft="37dp"
+            android:layout_marginStart="37dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox_Planned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Planned"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/aqua"
+            android:layout_below="@+id/unit"
+            android:layout_alignLeft="@+id/unit"
+            android:layout_alignStart="@+id/unit"
+            android:layout_marginTop="55dp" />
+
+        <TextView
+            android:id="@+id/textView_Duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:layout_below="@+id/checkBox_Planned"
+            android:layout_alignLeft="@+id/checkBox_Planned"
+            android:layout_alignStart="@+id/checkBox_Planned"
+            android:layout_marginTop="45dp" />
+
+        <TextView
+            android:id="@+id/textView_IntakeFrequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intake Frequency"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:layout_marginBottom="47dp"
+            android:layout_above="@+id/nextToReminder"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="9dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily, every x hours"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily, x times a day"
+                android:textColor="@color/white"
+            />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specific Days of the week"
+                android:textColor="@color/white"/>
+
+
+        </RadioGroup>
+
+
+
+
+        <Button
+            android:id="@+id/nextToReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next ->"
+            android:onClick="NextScreen"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/autoCompleteMedName"
+            android:layout_alignEnd="@+id/autoCompleteMedName"
+            android:layout_marginBottom="52dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_IntakeFrequency"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/textView_Duration"
+            android:orientation="horizontal">
+
+<RadioButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="No End Date"
+    android:textColor="@color/white"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Until Date"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="For x days"
+                android:textColor="@color/white"/>
+
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+    </ScrollView>

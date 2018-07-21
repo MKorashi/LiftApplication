@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.lift.NewDrinkFragment">
+
+
+    <TextView
+        android:id="@+id/drinkDesc_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drink Description"
+        android:textSize="20sp"
+        android:paddingTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/drinkDesc_editText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignBaseline="@+id/drinkDesc_textView"
+        android:layout_alignBottom="@+id/drinkDesc_textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/Vol_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume"
+        android:textSize="20sp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/drinkDesc_textView"
+        android:layout_alignStart="@+id/drinkDesc_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/vol_editText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/Vol_textView"
+        android:layout_alignBottom="@+id/Vol_textView"
+        android:layout_toRightOf="@+id/Vol_textView"
+        android:layout_toEndOf="@+id/Vol_textView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/unit_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Vol_textView"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/drinkDesc_textView"
+        android:layout_toRightOf="@+id/drinkDesc_textView"
+        android:text="Unit"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/dropDown_Unit3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignTop="@+id/unit_textView"
+        android:layout_toRightOf="@+id/unit_textView"
+        android:layout_toEndOf="@+id/unit_textView" />
+
+    <TextView
+        android:id="@+id/alcoholContent_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        android:text="Alcohol Content (% vol.)"
+        android:layout_below="@+id/vol_editText"
+        android:layout_alignLeft="@+id/drinkDesc_textView"
+        android:layout_alignStart="@+id/drinkDesc_textView" />
+
+    <EditText
+        android:id="@+id/alcoholContent_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/alcoholContent_textView"
+        android:layout_alignBottom="@+id/alcoholContent_textView"
+        android:layout_alignLeft="@+id/dropDown_Unit3"
+        android:layout_alignStart="@+id/dropDown_Unit3" />
+
+    <Switch
+        android:id="@+id/addToPresets_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:text="Save to Presets"
+        android:layout_below="@+id/alcoholContent_editText"
+        android:layout_alignRight="@+id/drinkDesc_editText"
+        android:layout_alignEnd="@+id/drinkDesc_editText"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Done"
+        android:layout_below="@+id/addToPresets_switch"
+        android:layout_toRightOf="@+id/alcoholContent_textView"
+        android:layout_toEndOf="@+id/alcoholContent_textView" />
+
+
+</RelativeLayout>

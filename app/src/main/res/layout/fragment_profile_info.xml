@@ -1,0 +1,151 @@
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.lift.ProfileInfoFragment">
+
+
+
+            <ImageView
+                android:id="@+id/imageView_calendar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp"
+                app:srcCompat="@drawable/date"
+                android:layout_above="@+id/textView_email"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"></ImageView>
+
+            <TextView
+        android:id="@+id/textView_birthdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:text="12/12/1992"
+        android:textSize="15sp"
+                android:paddingTop="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/textView_email"
+                android:layout_alignStart="@+id/textView_email"
+                android:layout_marginTop="10dp" />
+
+
+
+    <ImageView
+        android:id="@+id/email_imgView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/email"
+        android:layout_below="@+id/imageView_calendar"
+        android:layout_alignLeft="@+id/imageView_calendar"
+        android:layout_alignStart="@+id/imageView_calendar"
+        android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/textView_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hiho@yahoo.com"
+                android:textSize="15sp"
+                android:layout_gravity="left"
+                android:paddingTop="25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@+id/textView_birthdate"
+                android:layout_toRightOf="@+id/email_imgView"
+                android:layout_toEndOf="@+id/email_imgView" />
+
+
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/weight"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/email_imgView"
+        android:layout_toLeftOf="@+id/textView_email"
+        android:layout_toStartOf="@+id/textView_email"
+        android:id="@+id/imageView"></ImageView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageView_map"
+        android:src="@drawable/map"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignRight="@+id/textView_email"
+        android:layout_alignEnd="@+id/textView_email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="90KG"
+        android:textSize="15sp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignLeft="@+id/textView_email"
+        android:layout_alignStart="@+id/textView_email"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Germany"
+        android:textSize="15sp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignBottom="@+id/imageView_map"
+        android:layout_toRightOf="@+id/imageView_map"
+        android:layout_toEndOf="@+id/imageView_map"
+        android:id="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/gender_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/gender"
+        android:layout_above="@+id/textView_email"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender_text"
+        android:text="Male"
+        android:textSize="15sp"
+        android:layout_alignBottom="@+id/gender_icon"
+        android:layout_toRightOf="@+id/gender_icon"
+        android:layout_toEndOf="@+id/gender_icon"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="F31.6"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView4"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="ICD-10"
+        android:id="@+id/textView5"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+
+</RelativeLayout>

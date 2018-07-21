@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.lift.ProfileTrackerFragment">
+
+
+    <TextView
+        android:id="@+id/lastMoodLog_txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My last mood log was..."
+        android:textSize="17sp"/>
+
+
+    <TextView
+        android:id="@+id/MedicationAdherence_txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Medication Adherence is..."
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/lastMoodLog_txtView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="17sp"/>
+
+
+    <TextView
+        android:id="@+id/BACLevel_txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Current BAC Level is..."
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/MedicationAdherence_txtView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="17sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_moodLog"
+        android:text="Nervous"
+        android:layout_below="@+id/lastMoodLog_txtView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:id="@+id/medicationAdherenceResult_txtView"
+        android:layout_below="@+id/MedicationAdherence_txtView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentBACLevel_txtView"
+        android:textSize="15sp"
+        android:layout_below="@+id/BACLevel_txtView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="10%"/>
+
+
+</RelativeLayout>

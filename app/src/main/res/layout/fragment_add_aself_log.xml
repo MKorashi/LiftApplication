@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.lift.AddASelfLog"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add how you're feeling today."
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:id="@+id/howyourefeeling_txtView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/howyourefeeling_txtView"
+        android:layout_centerHorizontal="true"
+        android:text="GO"
+        android:id="@+id/Button_go"/>
+
+</RelativeLayout>

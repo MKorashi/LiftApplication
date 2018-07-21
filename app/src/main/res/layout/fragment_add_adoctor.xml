@@ -1,0 +1,130 @@
+<ScrollView android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.lift.AddADoctorFragment">
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="22sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="73dp" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_alignBottom="@+id/textView_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/textView_speciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_name"
+        android:layout_alignLeft="@+id/textView_name"
+        android:text="Speciality"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <EditText
+        android:id="@+id/editText_speciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/editText_name"
+        android:layout_alignLeft="@+id/editText_name"
+        android:layout_marginTop="13dp"/>
+
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_speciality"
+        android:layout_alignLeft="@+id/textView_speciality"
+        android:textSize="22sp"
+        android:text="Email"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/editText_speciality"
+        android:layout_alignLeft="@+id/editText_speciality"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:id="@+id/textView_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_email"
+        android:layout_alignLeft="@+id/textView_email"
+        android:textSize="22sp"
+        android:text="Address"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/editText_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/editText_email"
+        android:layout_alignLeft="@+id/editText_email"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:id="@+id/textView_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_address"
+        android:layout_alignLeft="@+id/textView_address"
+        android:textSize="22sp"
+        android:text="Phone Number"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/editText_phoneNumber"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignBottom="@+id/textView_phoneNumber"
+        android:layout_alignRight="@+id/editText_address"
+        android:layout_alignEnd="@+id/editText_address" />
+
+
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_below="@+id/editText_phoneNumber"
+        android:layout_alignRight="@+id/editText_phoneNumber"
+        android:layout_alignEnd="@+id/editText_phoneNumber"
+        android:layout_marginTop="21dp" />
+
+
+</RelativeLayout>
+</ScrollView>

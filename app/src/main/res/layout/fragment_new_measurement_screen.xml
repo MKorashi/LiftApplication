@@ -1,0 +1,143 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    tools:context="com.example.dell.lift.NewMeasurementScreen">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray">
+
+
+        <TextView
+            android:id="@+id/measurementName"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Measurement"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/measurementsDropDown"
+            android:layout_toStartOf="@+id/measurementsDropDown" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/measurementsDropDown"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/measurementName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"></android.support.v7.widget.AppCompatSpinner>
+
+        <EditText
+            android:id="@+id/dateEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:inputType="date"
+            android:layout_below="@+id/measurementName"
+            android:layout_alignLeft="@+id/measurementsDropDown"
+            android:layout_alignStart="@+id/measurementsDropDown"
+            android:text="DD/MM/YYYY"
+            />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:layout_alignBaseline="@+id/dateEntry"
+            android:layout_alignBottom="@+id/dateEntry"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp" />
+
+        <TextView
+            android:id="@+id/value_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41dp"
+            android:text="Value"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:layout_below="@+id/dateEntry"
+            android:layout_alignLeft="@+id/dateTextView"
+            android:layout_alignStart="@+id/dateTextView" />
+
+        <EditText
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_alignBottom="@+id/value_textView"
+            android:layout_alignLeft="@+id/dateEntry"
+            android:layout_alignStart="@+id/dateEntry" />
+
+        <TextView
+            android:id="@+id/customNote_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Note"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:layout_below="@+id/unit_textView"
+            android:layout_alignLeft="@+id/unit_textView"
+            android:layout_alignStart="@+id/unit_textView"
+            android:layout_marginTop="32dp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/customNote_textView"
+            android:layout_alignLeft="@+id/customNote_textView"
+            android:layout_alignStart="@+id/customNote_textView" />
+
+        <Button
+            android:id="@+id/button_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="9dp" />
+
+        <TextView
+            android:id="@+id/unit_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit"
+            android:textSize="23sp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/value_textView"
+            android:layout_alignStart="@+id/value_textView"
+            android:textColor="@color/white"/>
+
+        <Spinner
+            android:id="@+id/dropDown_Unit2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/unit_textView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
